@@ -183,3 +183,12 @@ org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
 ALTER RELEASE[*] ADD PACKAGEPARENT BIGINT(20) NOT NULL "; expected "TABLE, USER, INDEX, SCHEMA, SEQUENCE, VIEW"; SQL statement:
 
 ALTER Release ADD packageParent bigint(20) NOT NULL [42001-149]
+08-15 03:01:35 jdbc[7]: exception
+org.h2.jdbc.JdbcSQLException: Table "JOURNAL" not found; SQL statement:
+
+DROP TABLE Journal [42102-149]
+08-15 03:01:41 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+ALTER RELEASE[*] ADD PACKAGEPARENT BIGINT(20) NOT NULL "; expected "TABLE, USER, INDEX, SCHEMA, SEQUENCE, VIEW"; SQL statement:
+
+ALTER Release ADD packageParent bigint(20) NOT NULL [42001-149]

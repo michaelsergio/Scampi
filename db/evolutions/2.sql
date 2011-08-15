@@ -6,7 +6,7 @@ CREATE TABLE Release (
 --  FOREIGN KEY (packageParent) REFERENCES Package(id),
   name varchar(127) NOT NULL,
   version varchar(127) NOT NULL,
-  author varchar(127) NOT NULL,
+  author bigint (20) NOT NULL,
   FOREIGN KEY (author) REFERENCES User(id),
   authorEmail varchar(300) NOT NULL,
   maintainer bigint (20) NOT NULL,
