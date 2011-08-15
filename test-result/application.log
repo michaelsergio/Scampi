@@ -1,0 +1,379 @@
+11 Aug 2011 23:57:53,897 INFO  ~ Starting /home/sergio/code/play-1.2.2/scampi
+11 Aug 2011 23:57:54,009 INFO  ~ Module scala is available (/home/sergio/code/play-1.2.2/modules/scala-0.9.1)
+11 Aug 2011 23:58:05,478 INFO  ~ Scala support is active
+11 Aug 2011 23:58:05,480 WARN  ~ You're running Play! in DEV mode
+11 Aug 2011 23:58:05,794 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
+11 Aug 2011 23:58:54,929 ERROR ~ 
+
+@67cj840na
+Internal Server Error (500) for request GET /@tests
+
+Compilation error (In /app/models.scala around line 15)
+The file /app/models.scala could not be compiled. Error raised is : ':' expected but identifier found.
+
+play.exceptions.CompilationException: ':' expected but identifier found.
+	at play.scalasupport.ScalaPlugin.compilationException(ScalaPlugin.scala:129)
+	at play.scalasupport.ScalaPlugin.detectClassesChange(ScalaPlugin.scala:115)
+	at play.plugins.PluginCollection.detectClassesChange(PluginCollection.java:358)
+	at play.Play.detectChanges(Play.java:591)
+	at play.Invoker$Invocation.init(Invoker.java:186)
+	at Invocation.HTTP Request(Play!)
+11 Aug 2011 23:59:01,613 ERROR ~ 
+
+@67cj840nc
+Internal Server Error (500) for request GET /
+
+Compilation error (In /app/models.scala around line 33)
+The file /app/models.scala could not be compiled. Error raised is : ':' expected but identifier found.
+
+play.exceptions.CompilationException: ':' expected but identifier found.
+	at play.scalasupport.ScalaPlugin.compilationException(ScalaPlugin.scala:129)
+	at play.scalasupport.ScalaPlugin.detectClassesChange(ScalaPlugin.scala:115)
+	at play.plugins.PluginCollection.detectClassesChange(PluginCollection.java:358)
+	at play.Play.detectChanges(Play.java:591)
+	at play.Invoker$Invocation.init(Invoker.java:186)
+	at Invocation.HTTP Request(Play!)
+11 Aug 2011 23:59:33,933 ERROR ~ 
+
+@67cj840nd
+Internal Server Error (500) for request GET /
+
+Compilation error (In /app/models.scala around line 6)
+The file /app/models.scala could not be compiled. Error raised is : not found: type Pk
+
+play.exceptions.CompilationException: not found: type Pk
+	at play.scalasupport.ScalaPlugin.compilationException(ScalaPlugin.scala:129)
+	at play.scalasupport.ScalaPlugin.detectClassesChange(ScalaPlugin.scala:115)
+	at play.plugins.PluginCollection.detectClassesChange(PluginCollection.java:358)
+	at play.Play.detectChanges(Play.java:591)
+	at play.Invoker$Invocation.init(Invoker.java:186)
+	at Invocation.HTTP Request(Play!)
+12 Aug 2011 00:00:04,583 ERROR ~ 
+
+@67cj840ne
+Internal Server Error (500) for request GET /
+
+Compilation error (In /app/models.scala around line 6)
+The file /app/models.scala could not be compiled. Error raised is : not found: type Pk
+
+play.exceptions.CompilationException: not found: type Pk
+	at play.scalasupport.ScalaPlugin.compilationException(ScalaPlugin.scala:129)
+	at play.scalasupport.ScalaPlugin.detectClassesChange(ScalaPlugin.scala:115)
+	at play.plugins.PluginCollection.detectClassesChange(PluginCollection.java:358)
+	at play.Play.detectChanges(Play.java:591)
+	at play.Invoker$Invocation.init(Invoker.java:186)
+	at Invocation.HTTP Request(Play!)
+12 Aug 2011 00:00:42,521 ERROR ~ 
+
+@67cj840nf
+Internal Server Error (500) for request GET /
+
+Compilation error (In /app/models.scala around line 7)
+The file /app/models.scala could not be compiled. Error raised is : not found: type Pk
+
+play.exceptions.CompilationException: not found: type Pk
+	at play.scalasupport.ScalaPlugin.compilationException(ScalaPlugin.scala:129)
+	at play.scalasupport.ScalaPlugin.detectClassesChange(ScalaPlugin.scala:115)
+	at play.plugins.PluginCollection.detectClassesChange(PluginCollection.java:358)
+	at play.Play.detectChanges(Play.java:591)
+	at play.Invoker$Invocation.init(Invoker.java:186)
+	at Invocation.HTTP Request(Play!)
+12 Aug 2011 00:01:06,764 ERROR ~ 
+
+@67cj840ng
+Internal Server Error (500) for request GET /
+
+Compilation error (In /test/Tests.scala around line 5)
+The file /test/Tests.scala could not be compiled. Error raised is : not found: value models
+
+play.exceptions.CompilationException: not found: value models
+	at play.scalasupport.ScalaPlugin.compilationException(ScalaPlugin.scala:129)
+	at play.scalasupport.ScalaPlugin.detectClassesChange(ScalaPlugin.scala:115)
+	at play.plugins.PluginCollection.detectClassesChange(PluginCollection.java:358)
+	at play.Play.detectChanges(Play.java:591)
+	at play.Invoker$Invocation.init(Invoker.java:186)
+	at Invocation.HTTP Request(Play!)
+12 Aug 2011 00:01:28,342 ERROR ~ 
+
+@67cj840nh
+Internal Server Error (500) for request GET /
+
+Compilation error (In /test/Tests.scala around line 5)
+The file /test/Tests.scala could not be compiled. Error raised is : not found: value models
+
+play.exceptions.CompilationException: not found: value models
+	at play.scalasupport.ScalaPlugin.compilationException(ScalaPlugin.scala:129)
+	at play.scalasupport.ScalaPlugin.detectClassesChange(ScalaPlugin.scala:115)
+	at play.plugins.PluginCollection.detectClassesChange(PluginCollection.java:358)
+	at play.Play.detectChanges(Play.java:591)
+	at play.Invoker$Invocation.init(Invoker.java:186)
+	at Invocation.HTTP Request(Play!)
+12 Aug 2011 00:02:05,424 ERROR ~ 
+
+@67cj840ni
+Internal Server Error (500) for request GET /@documentation/modules/scala/guide2
+
+Compilation error (In /test/Tests.scala around line 18)
+The file /test/Tests.scala could not be compiled. Error raised is : value create is not a member of object models.User
+
+play.exceptions.CompilationException: value create is not a member of object models.User
+	at play.scalasupport.ScalaPlugin.compilationException(ScalaPlugin.scala:129)
+	at play.scalasupport.ScalaPlugin.detectClassesChange(ScalaPlugin.scala:115)
+	at play.plugins.PluginCollection.detectClassesChange(PluginCollection.java:358)
+	at play.Play.detectChanges(Play.java:591)
+	at play.Invoker$Invocation.init(Invoker.java:186)
+	at Invocation.HTTP Request(Play!)
+12 Aug 2011 00:02:14,856 ERROR ~ 
+
+@67cj840nj
+Internal Server Error (500) for request GET /
+
+Compilation error (In /test/Tests.scala around line 18)
+The file /test/Tests.scala could not be compiled. Error raised is : value create is not a member of object models.User
+
+play.exceptions.CompilationException: value create is not a member of object models.User
+	at play.scalasupport.ScalaPlugin.compilationException(ScalaPlugin.scala:129)
+	at play.scalasupport.ScalaPlugin.detectClassesChange(ScalaPlugin.scala:115)
+	at play.plugins.PluginCollection.detectClassesChange(PluginCollection.java:358)
+	at play.Play.detectChanges(Play.java:591)
+	at play.Invoker$Invocation.init(Invoker.java:186)
+	at Invocation.HTTP Request(Play!)
+12 Aug 2011 00:03:00,368 ERROR ~ 
+
+@67cj840nk
+Internal Server Error (500) for request GET /
+
+Compilation error (In /test/Tests.scala around line 18)
+The file /test/Tests.scala could not be compiled. Error raised is : not found: type Date
+
+play.exceptions.CompilationException: not found: type Date
+	at play.scalasupport.ScalaPlugin.compilationException(ScalaPlugin.scala:129)
+	at play.scalasupport.ScalaPlugin.detectClassesChange(ScalaPlugin.scala:115)
+	at play.plugins.PluginCollection.detectClassesChange(PluginCollection.java:358)
+	at play.Play.detectChanges(Play.java:591)
+	at play.Invoker$Invocation.init(Invoker.java:186)
+	at Invocation.HTTP Request(Play!)
+12 Aug 2011 00:04:30,895 INFO  ~ Connected to jdbc:h2:mem:play;MODE=MYSQL;LOCK_MODE=0
+12 Aug 2011 00:04:30,963 INFO  ~ Application 'Scampi' is now started !
+12 Aug 2011 00:04:34,081 ERROR ~ 
+
+@67cj840nl
+Internal Server Error (500) for request GET /
+
+Your database needs evolution!
+An SQL script will be run on your database.
+
+play.db.Evolutions$InvalidDatabaseRevision
+	at play.db.Evolutions.checkEvolutionsState(Evolutions.java:336)
+	at play.db.Evolutions.beforeInvocation(Evolutions.java:188)
+	at play.plugins.PluginCollection.beforeInvocation(PluginCollection.java:373)
+	at play.Invoker$Invocation.before(Invoker.java:205)
+	at play.Invoker$Invocation.run(Invoker.java:264)
+	at Invocation.HTTP Request(Play!)
+12 Aug 2011 00:04:41,048 ERROR ~ Can't apply evolution
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+ALTER RELEASE[*] ADD PACKAGEPARENT BIGINT(20) NOT NULL "; expected "TABLE, USER, INDEX, SCHEMA, SEQUENCE, VIEW"; SQL statement:
+
+ALTER Release ADD packageParent bigint(20) NOT NULL [42001-149]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:327)
+	at org.h2.message.DbException.get(DbException.java:167)
+	at org.h2.message.DbException.getSyntaxError(DbException.java:192)
+	at org.h2.command.Parser.getSyntaxError(Parser.java:487)
+	at org.h2.command.Parser.parseAlter(Parser.java:4137)
+	at org.h2.command.Parser.parsePrepared(Parser.java:302)
+	at org.h2.command.Parser.parse(Parser.java:275)
+	at org.h2.command.Parser.parse(Parser.java:251)
+	at org.h2.command.Parser.prepare(Parser.java:201)
+	at org.h2.command.Parser.prepareCommand(Parser.java:214)
+	at org.h2.engine.Session.prepareLocal(Session.java:425)
+	at org.h2.engine.Session.prepareCommand(Session.java:374)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1056)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:165)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:153)
+	at play.db.Evolutions.execute(Evolutions.java:464)
+	at play.db.Evolutions.applyScript(Evolutions.java:257)
+	at play.db.Evolutions.rawInvocation(Evolutions.java:175)
+	at play.plugins.PluginCollection.rawInvocation(PluginCollection.java:573)
+	at Invocation.Message Received(Play!)
+12 Aug 2011 00:04:41,482 ERROR ~ 
+
+@67cj840nm
+Internal Server Error (500) for request GET /
+
+Your database is an inconsistent state!
+An evolution has not been applied properly. Please check the problem and resolve it manually before making it as resolved.
+
+play.db.Evolutions$InconsistentDatabase
+	at play.db.Evolutions.checkEvolutionsState(Evolutions.java:327)
+	at play.db.Evolutions.beforeInvocation(Evolutions.java:188)
+	at play.plugins.PluginCollection.beforeInvocation(PluginCollection.java:373)
+	at play.Invoker$Invocation.before(Invoker.java:205)
+	at play.Invoker$Invocation.run(Invoker.java:264)
+	at Invocation.HTTP Request(Play!)
+12 Aug 2011 00:16:57,078 ERROR ~ 
+
+@67cj840nn
+Internal Server Error (500) for request GET /@tests
+
+Compilation error (In /test/Tests.scala around line 31)
+The file /test/Tests.scala could not be compiled. Error raised is : ')' expected but 'val' found.
+
+play.exceptions.CompilationException: ')' expected but 'val' found.
+	at play.scalasupport.ScalaPlugin.compilationException(ScalaPlugin.scala:129)
+	at play.scalasupport.ScalaPlugin.detectClassesChange(ScalaPlugin.scala:115)
+	at play.plugins.PluginCollection.detectClassesChange(PluginCollection.java:358)
+	at play.Play.detectChanges(Play.java:591)
+	at play.Invoker$Invocation.init(Invoker.java:186)
+	at Invocation.HTTP Request(Play!)
+12 Aug 2011 00:18:28,965 ERROR ~ 
+
+@67cj840no
+Internal Server Error (500) for request GET /@tests
+
+Compilation error (In /test/Tests.scala around line 37)
+The file /test/Tests.scala could not be compiled. Error raised is : ';' expected but ')' found.
+
+play.exceptions.CompilationException: ';' expected but ')' found.
+	at play.scalasupport.ScalaPlugin.compilationException(ScalaPlugin.scala:129)
+	at play.scalasupport.ScalaPlugin.detectClassesChange(ScalaPlugin.scala:115)
+	at play.plugins.PluginCollection.detectClassesChange(PluginCollection.java:358)
+	at play.Play.detectChanges(Play.java:591)
+	at play.Invoker$Invocation.init(Invoker.java:186)
+	at Invocation.HTTP Request(Play!)
+12 Aug 2011 00:18:50,514 ERROR ~ 
+
+@67cj840np
+Internal Server Error (500) for request GET /@tests
+
+Compilation error (In /test/Tests.scala around line 37)
+The file /test/Tests.scala could not be compiled. Error raised is : ';' expected but ')' found.
+
+play.exceptions.CompilationException: ';' expected but ')' found.
+	at play.scalasupport.ScalaPlugin.compilationException(ScalaPlugin.scala:129)
+	at play.scalasupport.ScalaPlugin.detectClassesChange(ScalaPlugin.scala:115)
+	at play.plugins.PluginCollection.detectClassesChange(PluginCollection.java:358)
+	at play.Play.detectChanges(Play.java:591)
+	at play.Invoker$Invocation.init(Invoker.java:186)
+	at Invocation.HTTP Request(Play!)
+12 Aug 2011 00:19:05,863 ERROR ~ 
+
+@67cj840o0
+Internal Server Error (500) for request GET /@tests
+
+Compilation error (In /test/Tests.scala around line 30)
+The file /test/Tests.scala could not be compiled. Error raised is : type mismatch;  found   : play.db.anorm.NotAssigned.type (with underlying type object play.db.anorm.NotAssigned)  required: Long
+
+play.exceptions.CompilationException: type mismatch;
+ found   : play.db.anorm.NotAssigned.type (with underlying type object play.db.anorm.NotAssigned)
+ required: Long
+	at play.scalasupport.ScalaPlugin.compilationException(ScalaPlugin.scala:129)
+	at play.scalasupport.ScalaPlugin.detectClassesChange(ScalaPlugin.scala:115)
+	at play.plugins.PluginCollection.detectClassesChange(PluginCollection.java:358)
+	at play.Play.detectChanges(Play.java:591)
+	at play.Invoker$Invocation.init(Invoker.java:186)
+	at Invocation.HTTP Request(Play!)
+12 Aug 2011 00:21:45,939 ERROR ~ 
+
+@67cj840o1
+Internal Server Error (500) for request GET /@tests
+
+Compilation error (In /test/Tests.scala around line 32)
+The file /test/Tests.scala could not be compiled. Error raised is : not found: value name
+
+play.exceptions.CompilationException: not found: value name
+	at play.scalasupport.ScalaPlugin.compilationException(ScalaPlugin.scala:129)
+	at play.scalasupport.ScalaPlugin.detectClassesChange(ScalaPlugin.scala:115)
+	at play.plugins.PluginCollection.detectClassesChange(PluginCollection.java:358)
+	at play.Play.detectChanges(Play.java:591)
+	at play.Invoker$Invocation.init(Invoker.java:186)
+	at Invocation.HTTP Request(Play!)
+12 Aug 2011 00:38:05,588 ERROR ~ 
+
+@67cj840o2
+Internal Server Error (500) for request GET /@asset(
+
+Compilation error (In /app/controllers.scala around line 15)
+The file /app/controllers.scala could not be compiled. Error raised is : value about is not a member of package views.Application.html
+
+play.exceptions.CompilationException: value about is not a member of package views.Application.html
+	at play.scalasupport.ScalaPlugin.compilationException(ScalaPlugin.scala:129)
+	at play.scalasupport.ScalaPlugin.detectClassesChange(ScalaPlugin.scala:115)
+	at play.plugins.PluginCollection.detectClassesChange(PluginCollection.java:358)
+	at play.Play.detectChanges(Play.java:591)
+	at play.Invoker$Invocation.init(Invoker.java:186)
+	at Invocation.HTTP Request(Play!)
+12 Aug 2011 00:38:12,274 ERROR ~ 
+
+@67cj840o3
+Internal Server Error (500) for request GET /@asset(
+
+Compilation error (In /app/controllers.scala around line 15)
+The file /app/controllers.scala could not be compiled. Error raised is : value about is not a member of package views.Application.html
+
+play.exceptions.CompilationException: value about is not a member of package views.Application.html
+	at play.scalasupport.ScalaPlugin.compilationException(ScalaPlugin.scala:129)
+	at play.scalasupport.ScalaPlugin.detectClassesChange(ScalaPlugin.scala:115)
+	at play.plugins.PluginCollection.detectClassesChange(PluginCollection.java:358)
+	at play.Play.detectChanges(Play.java:591)
+	at play.Invoker$Invocation.init(Invoker.java:186)
+	at Invocation.HTTP Request(Play!)
+12 Aug 2011 00:38:17,395 ERROR ~ 
+
+@67cj840o4
+Internal Server Error (500) for request GET /about
+
+Compilation error (In /app/controllers.scala around line 15)
+The file /app/controllers.scala could not be compiled. Error raised is : value about is not a member of package views.Application.html
+
+play.exceptions.CompilationException: value about is not a member of package views.Application.html
+	at play.scalasupport.ScalaPlugin.compilationException(ScalaPlugin.scala:129)
+	at play.scalasupport.ScalaPlugin.detectClassesChange(ScalaPlugin.scala:115)
+	at play.plugins.PluginCollection.detectClassesChange(PluginCollection.java:358)
+	at play.Play.detectChanges(Play.java:591)
+	at play.Invoker$Invocation.init(Invoker.java:186)
+	at Invocation.HTTP Request(Play!)
+12 Aug 2011 00:41:11,828 ERROR ~ 
+
+@67cj840o5
+Internal Server Error (500) for request GET /wishlist
+
+Compilation error (In /app/controllers.scala around line 18)
+The file /app/controllers.scala could not be compiled. Error raised is : value wishlist is not a member of package views.Application.html
+
+play.exceptions.CompilationException: value wishlist is not a member of package views.Application.html
+	at play.scalasupport.ScalaPlugin.compilationException(ScalaPlugin.scala:129)
+	at play.scalasupport.ScalaPlugin.detectClassesChange(ScalaPlugin.scala:115)
+	at play.plugins.PluginCollection.detectClassesChange(PluginCollection.java:358)
+	at play.Play.detectChanges(Play.java:591)
+	at play.Invoker$Invocation.init(Invoker.java:186)
+	at Invocation.HTTP Request(Play!)
+12 Aug 2011 00:43:16,292 ERROR ~ 
+
+@67cj840o6
+Internal Server Error (500) for request GET /about
+
+Compilation error (In /app/views/Application/about.scala.html around line 2)
+The file /app/views/Application/about.scala.html could not be compiled. Error raised is : not found: value About
+
+play.exceptions.CompilationException: not found: value About
+	at play.scalasupport.ScalaPlugin.compilationException(ScalaPlugin.scala:127)
+	at play.scalasupport.ScalaPlugin.detectClassesChange(ScalaPlugin.scala:115)
+	at play.plugins.PluginCollection.detectClassesChange(PluginCollection.java:358)
+	at play.Play.detectChanges(Play.java:591)
+	at play.Invoker$Invocation.init(Invoker.java:186)
+	at Invocation.HTTP Request(Play!)
+12 Aug 2011 00:43:31,130 ERROR ~ 
+
+@67cj840o7
+Internal Server Error (500) for request GET /about
+
+Compilation error (In /app/views/Application/about.scala.html around line 4)
+The file /app/views/Application/about.scala.html could not be compiled. Error raised is : not found: value title
+
+play.exceptions.CompilationException: not found: value title
+	at play.scalasupport.ScalaPlugin.compilationException(ScalaPlugin.scala:127)
+	at play.scalasupport.ScalaPlugin.detectClassesChange(ScalaPlugin.scala:115)
+	at play.plugins.PluginCollection.detectClassesChange(PluginCollection.java:358)
+	at play.Play.detectChanges(Play.java:591)
+	at play.Invoker$Invocation.init(Invoker.java:186)
+	at Invocation.HTTP Request(Play!)

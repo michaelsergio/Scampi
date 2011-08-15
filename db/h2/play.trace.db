@@ -1,0 +1,185 @@
+08-11 22:45:41 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+[*]/*
+CREATE TABLE Journal(
+    id bigint(20) NOT NULL AUTO_INCREMENT,
+    release bigint(20) NOT NULL,
+    FOREIGN KEY (release) REFERENCES Release(id),
+    action varchar(255) NOT NULL,
+    date date NOT NULL,
+    user bigint(20) NOT NULL,
+    FOREIGN KEY (user) REFERENCES User(id),
+    ip varchar(45) NOT NULL
+)"; SQL statement:
+
+/*
+CREATE TABLE Journal(
+    id bigint(20) NOT NULL AUTO_INCREMENT,
+    release bigint(20) NOT NULL,
+    FOREIGN KEY (release) REFERENCES Release(id),
+    action varchar(255) NOT NULL,
+    date date NOT NULL,
+    user bigint(20) NOT NULL,
+    FOREIGN KEY (user) REFERENCES User(id),
+    ip varchar(45) NOT NULL
+) [42000-149]
+08-11 22:48:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+[*]/*
+ DROP TABLE Journal"; SQL statement:
+
+/*
+ DROP TABLE Journal [42000-149]
+08-11 23:14:36 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "CREATE TABLE RELEASE
+  ID[*] BIGINT (20)
+  PACKAGEPARENT BIGINT(20) NOT NULL,
+  FOREIGN KEY (PACKAGEPARENT) REFERENCES PACKAGE(ID),
+  NAME VARCHAR(127) NOT NULL,
+  VERSION VARCHAR(127) NOT NULL,
+  AUTHOR VARCHAR(127) NOT NULL,
+  AUTHOREMAIL VARCHAR(300) NOT NULL,
+  MAINTAINER BIGINT (20) NOT NULL,
+  FOREIGN KEY (MAINTAINER) REFERENCES USER(ID),
+  MAINTAINEREMAIL VARCHAR(300) NOT NULL,
+  SUMMARY VARCHAR(127) NOT NULL,
+  DESCRIPTION TEXT (1200),
+  KEYWORDS VARCHAR(255),
+  REQUIREMENTS VARCHAR(255),
+  PROVIDES VARCHAR(255),
+  OBSOLETES VARCHAR(255),
+  HOMEPAGE VARCHAR(400),
+  DOWNLOADURL VARCHAR(127)
+  HIDDEN BOOLEAN,
+  LICENSE TEXT (1200),
+  PLATFORM TEXT (1200)
+) "; expected "("; SQL statement:
+CREATE TABLE Release
+  id bigint (20)
+  packageParent bigint(20) NOT NULL,
+  FOREIGN KEY (packageParent) REFERENCES Package(id),
+  name varchar(127) NOT NULL,
+  version varchar(127) NOT NULL,
+  author varchar(127) NOT NULL,
+  authorEmail varchar(300) NOT NULL,
+  maintainer bigint (20) NOT NULL,
+  FOREIGN KEY (maintainer) REFERENCES User(id),
+  maintainerEmail varchar(300) NOT NULL,
+  summary varchar(127) NOT NULL,
+  description text (1200),
+  keywords varchar(255),
+  requirements varchar(255),
+  provides varchar(255),
+  obsoletes varchar(255),
+  homePage varchar(400),
+  downloadUrl varchar(127)
+  hidden boolean,
+  license text (1200),
+  platform text (1200)
+) [42001-149]
+08-11 23:15:06 jdbc[7]: exception
+org.h2.jdbc.JdbcSQLException: Table "RELEASE" not found; SQL statement:
+DROP TABLE Release [42102-149]
+08-11 23:15:24 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "CREATE TABLE RELEASE (
+  ID BIGINT (20),
+  PACKAGEPARENT BIGINT(20) NOT NULL,
+  FOREIGN KEY (PACKAGEPARENT) REFERENCES PACKAGE(ID),
+  NAME VARCHAR(127) NOT NULL,
+  VERSION VARCHAR(127) NOT NULL,
+  AUTHOR VARCHAR(127) NOT NULL,
+  AUTHOREMAIL VARCHAR(300) NOT NULL,
+  MAINTAINER BIGINT (20) NOT NULL,
+  FOREIGN KEY (MAINTAINER) REFERENCES USER(ID),
+  MAINTAINEREMAIL VARCHAR(300) NOT NULL,
+  SUMMARY VARCHAR(127) NOT NULL,
+  DESCRIPTION TEXT (1200),
+  KEYWORDS VARCHAR(255),
+  REQUIREMENTS VARCHAR(255),
+  PROVIDES VARCHAR(255),
+  OBSOLETES VARCHAR(255),
+  HOMEPAGE VARCHAR(400),
+  DOWNLOADURL VARCHAR(127)
+  HIDDEN[*] BOOLEAN,
+  LICENSE TEXT (1200),
+  PLATFORM TEXT (1200)
+) "; expected ")"; SQL statement:
+CREATE TABLE Release (
+  id bigint (20),
+  packageParent bigint(20) NOT NULL,
+  FOREIGN KEY (packageParent) REFERENCES Package(id),
+  name varchar(127) NOT NULL,
+  version varchar(127) NOT NULL,
+  author varchar(127) NOT NULL,
+  authorEmail varchar(300) NOT NULL,
+  maintainer bigint (20) NOT NULL,
+  FOREIGN KEY (maintainer) REFERENCES User(id),
+  maintainerEmail varchar(300) NOT NULL,
+  summary varchar(127) NOT NULL,
+  description text (1200),
+  keywords varchar(255),
+  requirements varchar(255),
+  provides varchar(255),
+  obsoletes varchar(255),
+  homePage varchar(400),
+  downloadUrl varchar(127)
+  hidden boolean,
+  license text (1200),
+  platform text (1200)
+) [42001-149]
+08-11 23:16:36 jdbc[7]: exception
+org.h2.jdbc.JdbcSQLException: Table "RELEASE" not found; SQL statement:
+DROP TABLE Release [42102-149]
+08-11 23:16:47 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "PACKAGE" not found; SQL statement:
+CREATE TABLE Release (
+  id bigint (20),
+  packageParent bigint(20) NOT NULL,
+  FOREIGN KEY (packageParent) REFERENCES Package(id),
+  name varchar(127) NOT NULL,
+  version varchar(127) NOT NULL,
+  author varchar(127) NOT NULL,
+  authorEmail varchar(300) NOT NULL,
+  maintainer bigint (20) NOT NULL,
+  FOREIGN KEY (maintainer) REFERENCES User(id),
+  maintainerEmail varchar(300) NOT NULL,
+  summary varchar(127) NOT NULL,
+  description text (1200),
+  keywords varchar(255),
+  requirements varchar(255),
+  provides varchar(255),
+  obsoletes varchar(255),
+  homePage varchar(400),
+  downloadUrl varchar(127),
+  hidden boolean,
+  license text (1200),
+  platform text (1200)
+) [42102-149]
+08-11 23:18:58 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "RELEASE" not found; SQL statement:
+DROP TABLE Release [42102-149]
+08-11 23:22:41 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+ALTER RELEASE[*] ADD PACKAGEPARENT BIGINT(20) NOT NULL,
+                     FOREIGN KEY (PACKAGEPARENT) REFERENCES PACKAGE(ID) "; expected "TABLE, USER, INDEX, SCHEMA, SEQUENCE, VIEW"; SQL statement:
+
+ALTER Release ADD packageParent bigint(20) NOT NULL,
+                     FOREIGN KEY (packageParent) REFERENCES Package(id) [42001-149]
+08-11 23:23:26 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "PACKAGE" not found; SQL statement:
+
+DROP TABLE Package [42102-149]
+08-11 23:23:33 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+ALTER RELEASE[*] ADD PACKAGEPARENT BIGINT(20) NOT NULL "; expected "TABLE, USER, INDEX, SCHEMA, SEQUENCE, VIEW"; SQL statement:
+
+ALTER Release ADD packageParent bigint(20) NOT NULL [42001-149]
+08-11 23:24:16 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLException: Table "PACKAGE" not found; SQL statement:
+
+DROP TABLE Package [42102-149]
+08-11 23:24:20 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "
+ALTER RELEASE[*] ADD PACKAGEPARENT BIGINT(20) NOT NULL "; expected "TABLE, USER, INDEX, SCHEMA, SEQUENCE, VIEW"; SQL statement:
+
+ALTER Release ADD packageParent bigint(20) NOT NULL [42001-149]

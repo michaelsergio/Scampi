@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<testsuite failures="0" time="0.199" errors="1" skipped="0" tests="2" name="BasicTests">
+  <testcase classname="BasicTests" name="should run this dumb test" time="0.003">
+      </testcase>
+  <testcase classname="BasicTests" name="should create and retrieve a User" time="0.075">
+      </testcase>
+  <testcase classname="BasicTests" name="should create a release for a package" time="0.121">
+                        <error type="" message="None was equal to None">
+        <![CDATA[
+          In Tests.scala, 36
+          
+                      uno should not be (None) :
+          
+        ]]>
+        </error>
+        }
+            </testcase>
+</testsuite>
